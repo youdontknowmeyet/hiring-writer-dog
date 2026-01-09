@@ -1,311 +1,209 @@
+html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hiring: Viral Dog Content Writer</title>
+    <title>Hiring: Dog Breed Content Writer (Remote)</title>
+    
+    <!-- 
+        PLACE YOUR FACEBOOK/META PIXEL CODE BELOW THIS LINE 
+    -->
+    <!-- [PASTE PIXEL HERE] -->
+    <!-- 
+        PLACE YOUR FACEBOOK/META PIXEL CODE ABOVE THIS LINE 
+    -->
+
     <style>
-        /* --- General Styles & Resets --- */
-        body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f8f9fa;
-            color: #333;
+        :root {
+            --primary-green: #28a745;
+            --dark-green: #218838;
+            --bg-gray: #f8f9fa;
+            --text-dark: #333;
+            --white: #ffffff;
+            --border-gray: #dee2e6;
         }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-gray);
+        }
+
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
         }
-        h1, h2, h3 {
-            line-height: 1.2;
-        }
-        h2 {
-            border-bottom: 2px solid #e0e0e0;
-            padding-bottom: 10px;
-            margin-top: 40px;
-        }
-        a {
-            color: #007bff;
-        }
 
-        /* --- Hero Section --- */
-        .hero {
-            background: linear-gradient(135deg, #e3eeff, #f3e7e9);
+        header {
             text-align: center;
             padding: 60px 20px;
-            border-bottom: 1px solid #ddd;
-        }
-        .hero h1 {
-            font-size: 48px;
-            font-weight: bold;
-            margin: 0 0 10px 0;
-            color: #212529;
-        }
-        .hero p {
-            font-size: 20px;
-            font-weight: 300;
-            max-width: 600px;
-            margin: 0 auto;
-            color: #495057;
+            background: linear-gradient(135deg, #ffffff 0%, #f1f3f5 100%);
+            border-bottom: 1px solid var(--border-gray);
+            border-radius: 12px;
+            margin-bottom: 30px;
         }
 
-        /* --- Content sections --- */
-        section {
-            padding: 20px 0;
-        }
-        .list-style-none {
-            list-style: none;
-            padding-left: 0;
-        }
-        .list-style-none li {
-            margin-bottom: 10px;
-        }
-        .example-topic {
-            background-color: #e9ecef;
-            border-left: 4px solid #007bff;
-            padding: 15px;
-            margin: 15px 0;
-            font-style: italic;
-        }
-        .check-list li, .cross-list li {
-            font-size: 1.1em;
-            margin-bottom: 12px;
-        }
-        .highlight-box {
-            background-color: #fffbe6;
-            border: 1px solid #ffe58f;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 5px;
-        }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; color: #1a1a1a; }
+        h2 { font-size: 1.8rem; margin: 30px 0 20px; color: #1a1a1a; border-left: 5px solid var(--primary-green); padding-left: 15px; }
+        h3 { margin-top: 20px; color: #444; }
 
-        /* --- Process Section --- */
-        .process-steps {
-            list-style: none;
-            padding: 0;
-            counter-reset: step-counter;
-        }
-        .process-steps li {
-            counter-increment: step-counter;
-            margin-bottom: 20px;
-            position: relative;
-            padding-left: 40px;
-        }
-        .process-steps li::before {
-            content: counter(step-counter);
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 30px;
-            height: 30px;
-            background-color: #28a745;
-            color: white;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 30px;
-            font-weight: bold;
-        }
+        .hero-sub { font-size: 1.2rem; color: #666; margin-bottom: 30px; font-style: italic; }
 
-        /* --- CTA Section --- */
-        .cta-section {
-            text-align: center;
-            background-color: #fff;
-            padding: 40px 20px;
-            border-radius: 8px;
-            margin-top: 30px;
-        }
-         .cta-section p {
-            font-size: 18px;
-         }
-        .cta-button {
+        .btn {
             display: inline-block;
-            background-color: #28a745;
-            color: #fff;
-            padding: 15px 30px;
-            font-size: 20px;
-            font-weight: bold;
+            background-color: var(--primary-green);
+            color: var(--white);
+            padding: 18px 35px;
             text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-            border: none;
-            cursor: pointer;
-        }
-        .cta-button:hover {
-            background-color: #218838;
-        }
-        .trust-element {
-            margin-top: 15px;
-            font-size: 0.9em;
-            color: #6c757d;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: background 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
 
-        /* --- FAQ Section --- */
-        .faq-item {
-            margin-bottom: 15px;
-        }
-        .faq-item strong {
-            display: block;
+        .btn:hover { background-color: var(--dark-green); }
+
+        .section {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
 
-        /* --- Responsive Design --- */
+        .no-exp-box {
+            background-color: #e9f7ef;
+            border: 2px dashed var(--primary-green);
+        }
+
+        ul { list-style: none; }
+        li { margin-bottom: 12px; position: relative; padding-left: 5px; }
+
+        .checklist li::before { content: "✅ "; }
+        .disqualifiers li::before { content: "❌ "; }
+
+        .faq-item { margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #eee; }
+        .faq-q { font-weight: bold; color: var(--primary-green); display: block; }
+
+        .footer-cta { text-align: center; padding: 50px 0; }
+
+        .small-caps { font-size: 0.9rem; color: #777; font-style: italic; display: block; margin-top: 10px; }
+
         @media (max-width: 600px) {
-            .hero h1 {
-                font-size: 36px;
-            }
-            .hero p {
-                font-size: 18px;
-            }
-            .container {
-                padding: 15px;
-            }
+            h1 { font-size: 1.8rem; }
+            .btn { width: 100%; text-align: center; }
         }
     </style>
 </head>
 <body>
 
-    <header class="hero">
-        <h1>Write Viral Dog Content. Work Remotely. Get Paid for Quality.</h1>
-        <p>We're hiring content writers who can turn breed-specific dog topics into scroll-stopping vertical video scripts—using real research from dog owner communities.</p>
+<div class="container">
+    <header>
+        <h1>🎥 We're Hiring: Dog Breed Content Writers</h1>
+        <p class="hero-sub">"We're looking for people who can make a dog owner say 'That's EXACTLY my dog!'"</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSewNdjMkMQu9CwBPBMP7Jvwn0YQWKTbij1ugqzLExF2bcpTxg/viewform" class="btn">Apply Now - Start Your Test</a>
     </header>
 
-    <main class="container">
+    <div class="section">
+        <h2>What You'll Actually Do 🦴</h2>
+        <p><i>You'll need to actually do research—not just rewrite the top Google result.</i></p>
+        <p>As a technical content writer on our team, you'll create 50-second vertical video scripts (TikTok/Instagram Reels) focused on specific dog breeds.</p>
+        
+        <h3>Your Process:</h3>
+        <ul style="margin-top:10px;">
+            <li>🔍 <strong>Research:</strong> Dive into Reddit, Facebook groups, and forums.</li>
+            <li>💬 <strong>Extract:</strong> Pull authentic quotes (UGC) that reveal real hidden emotions.</li>
+            <li>✏️ <strong>Write:</strong> Craft conversational scripts using real owner voices.</li>
+            <li>💡 <strong>Simplify:</strong> Turn complex health topics into relatable analogies.</li>
+        </ul>
+    </div>
 
-        <!-- SECTION 2: ABOUT THE ROLE -->
-        <section id="about">
-            <h2>What You'll Actually Do</h2>
-            <p>As a technical content writer on our team, you'll create 50-second vertical video scripts (like TikTok/Instagram Reels) focused on specific dog breeds.</p>
-            <h3>Your Process:</h3>
-            <ol>
-                <li><strong>Research:</strong> 🔍 Dive into Reddit threads, Facebook groups, and breed-specific forums to find what dog owners are actually saying.</li>
-                <li><strong>Extract:</strong> Pull authentic quotes (UGC - User Generated Content) that reveal pain points, questions, and emotions.</li>
-                <li><strong>Write:</strong> ✏️ Craft conversational scripts that weave these real owner voices into educational, engaging content.</li>
-                <li><strong>Simplify:</strong> Turn complex topics (health issues, behavior problems, training challenges) into relatable analogies.</li>
-            </ol>
+    <div class="section">
+        <h2>Is This You? 🐕</h2>
+        <ul class="checklist">
+            <li>You're a dog owner or deeply familiar with online dog communities.</li>
+            <li>You can write like you talk—conversational, natural, zero corporate speak.</li>
+            <li>You love research and can spend 30 minutes digging through threads to find "gold".</li>
+            <li>You follow instructions precisely and meet deadlines.</li>
+            <li>You want feedback and are willing to revise your work.</li>
+        </ul>
 
-            <h3>Example Topics:</h3>
-            <div class="example-topic">"Why Your French Bulldog Breathes Like That (And When It's Dangerous)"</div>
-            <div class="example-topic">"The Real Reason Your Shiba Inu Ignores You"</div>
+        <h3 style="margin-top:25px; color:#d9534f;">This is NOT for you if:</h3>
+        <ul class="disqualifiers">
+            <li>You write generic, "content mill" style articles.</li>
+            <li>You think "professional writing" means a formal, academic tone.</li>
+            <li>You just want to pump out AI-generated content without real research.</li>
+            <li>You can't handle constructive feedback.</li>
+            <li><strong>You believe your years of experience mean you don't need to follow our framework.</strong></li>
+            <li><strong>You're looking for a role where you can "do things your way" without structure.</strong></li>
+        </ul>
+    </div>
 
-            <h3>Script Structure You'll Follow:</h3>
-            <ul class="list-style-none">
-                <li><strong>Hook (0-2 seconds):</strong> Stop the scroll</li>
-                <li><strong>Problem Setup (2-8 seconds):</strong> Present the issue</li>
-                <li><strong>Revelations with UGC (8-40 seconds):</strong> Educate using real dog owner quotes</li>
-                <li><strong>CTA (40-50 seconds):</strong> Drive engagement</li>
-            </ul>
-        </section>
+    <div class="section no-exp-box">
+        <h2>📢 No Experience? Perfect. 🎓</h2>
+        <p><strong>You might think you're not qualified because you've never been a "professional writer."</strong> Actually, that might make you the <em>perfect</em> candidate.</p>
+        <p>Writers with strong English skills but little formal experience often excel here because:</p>
+        <ul class="checklist">
+            <li>You haven't been trained to write in a boring, corporate tone.</li>
+            <li>You're willing to learn our specific framework instead of arguing "how it’s done."</li>
+            <li>You take feedback seriously because you want to improve.</li>
+            <li>You haven't developed bad "content mill" habits yet.</li>
+        </ul>
+        <p><strong>We'd rather train someone with the right attitude than fix someone with years of bad habits.</strong></p>
+    </div>
 
-        <!-- SECTION 3: WHO WE'RE LOOKING FOR -->
-        <section id="who">
-            <h2>Is This You?</h2>
-            <p>You're a great fit if:</p>
-            <ul class="list-style-none check-list">
-                <li>✅ You're a dog owner or deeply familiar with online dog communities</li>
-                <li>✅ You can write like you talk—conversational, natural, zero corporate speak</li>
-                <li>✅ You love research and can spend 30 minutes digging through Reddit threads to find gold</li>
-                <li>✅ You understand how to make complex ideas simple (without dumbing them down)</li>
-                <li>✅ You're comfortable using AI tools (ChatGPT, Claude) to assist your workflow</li>
-                <li>✅ You follow instructions precisely and meet deadlines</li>
-                <li>✅ You want feedback and are willing to revise your work</li>
-            </ul>
-            <p>This is <strong>NOT</strong> for you if:</p>
-            <ul class="list-style-none cross-list">
-                <li>❌ <strong>You write generic, "content mill" style articles that could be about anything</strong></li>
-                <li>❌ You've never spent time in dog forums, Facebook groups, or breed communities</li>
-                <li>❌ You think "professional writing" means formal, academic tone</li>
-                <li>❌ <strong>You just want to pump out AI-generated content without real research</strong></li>
-                <li>❌ You can't handle constructive feedback</li>
-            </ul>
-            <div class="highlight-box">
-                <strong>What We Care About Most:</strong><br>
-                <em>We don't care where you went to school or if you have 10 years of experience. We care if you can make a French Bulldog owner stop scrolling and think "OMG that's exactly what my dog does!"</em>
-            </div>
-        </section>
+    <div class="section">
+        <h2>Why Join Our Team? 🌍</h2>
+        <ul class="checklist">
+            <li>💰 <strong>Pay Based on Quality:</strong> We pay for results, not hours. High quality = High pay.</li>
+            <li>🏠 <strong>100% Remote:</strong> Work from anywhere in the Philippines, SA, Kenya, Nigeria, Pakistan, or Ghana.</li>
+            <li>🤖 <strong>AI-Assisted Workflow:</strong> We encourage AI tools to help research and draft.</li>
+            <li>📈 <strong>Master the 'UGC Framework':</strong> Learn the art of high-demand, retention-based scripting.</li>
+            <li>🐾 <strong>Work on Topics You Enjoy:</strong> Much better than writing about SaaS or accounting!</li>
+        </ul>
+    </div>
 
-        <!-- SECTION 4: WHY THIS OPPORTUNITY -->
-        <section id="why">
-            <h2>Why Join Our Team?</h2>
-            <ul class="list-style-none">
-                <li>💰 <strong>Pay Based on Quality</strong><br>
-                We compensate based on output quality, not hours worked. The better your research and writing, the more you earn.</li>
-                 <li>🌍 <strong>100% Remote</strong><br>
-                Work from anywhere. As long as you have internet and can communicate in English, you're good.</li>
-                <li>🤖 <strong>AI-Assisted Workflow</strong><br>
-                We encourage using AI tools to help you research and draft. We care about the final result.</li>
-                <li>📚 <strong>Learn a Valuable Skill</strong><br>
-                UGC-driven content creation is one of the most in-demand skills in marketing right now.</li>
-                <li>🐕 <strong>Work on Topics You Enjoy</strong><br>
-                If you love dogs, this beats writing about SaaS products or accounting software.</li>
-                <li>🎯 <strong>Clear Expectations</strong><br>
-                We provide frameworks, examples, and detailed feedback. You'll know exactly what "good" looks like.</li>
-                <li>📈 <strong>Growth Potential</strong><br>
-                Start with video scripts, potentially expand to blog posts, email newsletters, or more.</li>
-            </ul>
-        </section>
+    <div class="section">
+        <h2>How It Works 🛠️</h2>
+        <ol style="padding-left: 20px;">
+            <li><strong>Apply + 100-Word Test (Today):</strong> Complete a short form and a small script test. 📝 <em>Note: Your script must include at least 10 direct UGC quotes.</em></li>
+            <li><strong>Review (3-5 Days):</strong> We evaluate based on a systematic rubric.</li>
+            <li><strong>Round 2:</strong> Top candidates (7/10 score or higher) move to a longer project.</li>
+            <li><strong>Onboarding:</strong> Final selection is hired and started immediately!</li>
+        </ol>
+    </div>
 
-        <!-- SECTION 5: THE PROCESS -->
-        <section id="process">
-            <h2>How It Works (Transparent Hiring Process)</h2>
-            <ol class="process-steps">
-                <li>
-                    <strong>Apply + Complete 100-Word Test (Today)</strong><br>
-                    Click the "Apply Now" button below. You'll fill out a short form and choose one of two 100-word test writing projects. ⏱️ <em>Time commitment: 30-60 minutes</em>
-                </li>
-                <li>
-                    <strong>We Review Your Test (Within 3-5 Business Days)</strong><br>
-                    Our team evaluates your submission based on a detailed rubric. 📊 Scoring is systematic and fair.
-                </li>
-                 <li>
-                    <strong>Top Candidates Advance to Round 2 (If You Pass)</strong><br>
-                    If your Round 1 test scores 7/10 or higher, you'll receive an email with instructions for a longer test project.
-                </li>
-                <li>
-                    <strong>Final Selection & Onboarding</strong><br>
-                    Top performers from Round 2 get hired! We'll send you an onboarding guide and your first real assignment.
-                </li>
-            </ol>
-        </section>
+    <div class="section">
+        <h2>Frequently Asked Questions ❓</h2>
+        <div class="faq-item">
+            <span class="faq-q">Q: Can I use ChatGPT or Claude?</span>
+            <span>A: Yes! We encourage it. Just ensure the final output has "soul" and real research. We use the 70/30 rule: 70% research, 30% AI execution.</span>
+        </div>
+        <div class="faq-item">
+            <span class="faq-q">Q: Do I need a degree?</span>
+            <span>A: No. We care about your ability to make a dog owner stop scrolling, not your credentials.</span>
+        </div>
+        <div class="faq-item">
+            <span class="faq-q">Q: How much does this pay?</span>
+            <span>A: Rates are discussed after passing Round 2. We pay premium rates for high-quality, research-heavy scripts.</span>
+        </div>
+    </div>
 
-        <!-- SECTION 6: APPLY NOW (Primary CTA) -->
-        <section id="apply" class="cta-section">
-            <h2>Ready to Show Us What You've Got?</h2>
-            <p>Click below to access the application form. You'll complete a short questionnaire and one 100-word test writing project.</p>
-            <!-- Replace "#" with your actual Google Form link -->
-            <a href="#" class="cta-button">Apply Now - Start Your Test</a>
-            <p class="trust-element">100+ writers have applied. Join them.</p>
-        </section>
+    <div class="footer-cta">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSewNdjMkMQu9CwBPBMP7Jvwn0YQWKTbij1ugqzLExF2bcpTxg/viewform" class="btn">Ready? Start Your Test Project Now</a>
+        <span class="small-caps">If you hate feedback and revision, this won't be a fit.</span>
+    </div>
+</div>
 
-        <!-- SECTION 7: FAQ -->
-        <section id="faq">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-item">
-                <strong>Q: Do I need to be a professional writer?</strong>
-                A: No. We care about your ability to research, write conversationally, and understand dog owners—not your credentials.
-            </div>
-            <div class="faq-item">
-                <strong>Q: Can I use ChatGPT or Claude to help write?</strong>
-                A: Yes! We encourage it. Just make sure the final output is authentic, well-researched, and matches our quality standards.
-            </div>
-            <div class="faq-item">
-                <strong>Q: How much does this pay?</strong>
-                A: Payment is based on output quality and volume. We'll discuss specific rates with candidates who pass Round 2.
-            </div>
-            <div class="faq-item">
-                <strong>Q: How many hours per week?</strong>
-                A: Flexible. This can be a side gig (5-10 hours/week) or more substantial (20+ hours/week) depending on your needs.
-            </div>
-             <div class="faq-item">
-                <strong>Q: I'm not a dog owner. Can I still apply?</strong>
-                A: Yes, if you're deeply familiar with dog communities and can demonstrate understanding of dog owner language.
-            </div>
-        </section>
-
-        <footer style="text-align: center; padding: 20px 0; color: #6c757d; font-size: 0.9em; border-top: 1px solid #e0e0e0; margin-top: 20px;">
-           <p>Our Commitment to Applicants: We review every submission and you'll hear back within 5 business days. We don't ghost.</p>
-        </footer>
-
-    </main>
 </body>
 </html>
