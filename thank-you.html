@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Received - Thank You</title>
+    
+    <!-- 
+        PLACE YOUR FACEBOOK/META PIXEL CODE BELOW THIS LINE 
+        (This will track the 'Lead' or 'CompleteRegistration' event)
+    -->
+    <!-- [PASTE PIXEL HERE] -->
+    <!-- 
+        PLACE YOUR FACEBOOK/META PIXEL CODE ABOVE THIS LINE 
+    -->
+
+    <style>
+        :root {
+            --primary-green: #28a745;
+            --bg-gray: #f8f9fa;
+            --text-dark: #333;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: var(--bg-gray);
+            color: var(--text-dark);
+            text-align: center;
+        }
+
+        .thank-you-card {
+            background: var(--white);
+            padding: 50px 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            max-width: 500px;
+            width: 90%;
+            border-top: 8px solid var(--primary-green);
+        }
+
+        .icon-circle {
+            width: 80px;
+            height: 80px;
+            background-color: #e9f7ef;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            font-size: 40px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .status-badge {
+            display: inline-block;
+            background-color: #f1f3f5;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        .spam-notice {
+            font-size: 0.9rem;
+            color: #888;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 25px;
+            color: var(--primary-green);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="thank-you-card">
+        <div class="icon-circle">✅</div>
+        
+        <h1>Thank you for applying!</h1>
+        
+        <div class="status-badge">🕒 Application Status: Under Review</div>
+        
+        <p>Your test submission has been received. We'll review it within <strong>3-5 business days</strong> and send you an email with our decision.</p>
+        
+        <p>Questions? Reply to the confirmation email you just received.</p>
+
+        <div class="spam-notice">
+            📧 <strong>Important:</strong> Check your spam folder if you don't see our response within the week.
+        </div>
+
+        <a href="index.html" class="back-link">← Return to Homepage</a>
+    </div>
+
+</body>
+</html>
